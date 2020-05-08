@@ -1,4 +1,5 @@
 # SMMO web app - chrome extension for notifications
+## Version: 0.1 Alpha
 #### Developed by Y0mu#0703
 ### Installation guide:
 1. Download and unzip the extension.
