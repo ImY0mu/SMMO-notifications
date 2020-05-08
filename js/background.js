@@ -1,4 +1,4 @@
-var debugging = 1;
+var debugging = 0;
 
 var agent = navigator.userAgent + " | CHROME EXTENSION - notifications";
 
