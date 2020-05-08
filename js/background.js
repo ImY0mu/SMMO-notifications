@@ -1,5 +1,26 @@
 var debugging = 1;
 
+var agent = navigator.userAgent + " | CHROME EXTENSION - notifications";
+
+chrome.webRequest.onBeforeSendHeaders.addListener(
+    function(info) {
+      var headers = info.requestHeaders;
+      headers.forEach(function(header, i) {
+        if (header.name.toLowerCase() == 'user-agent') {
+          header.value = agent;
+        }
+      });
+      return {requestHeaders: headers};
+    },
+    {
+      urls: [
+        "https://web.simple-mmo.com/*"
+      ],
+      types: ["main_frame", "sub_frame", "xmlhttprequest"]
+      },
+      ["blocking", "requestHeaders"]
+);
+
 chrome.runtime.onInstalled.addListener(function() {
   var settings = {
     "quests": 1,
