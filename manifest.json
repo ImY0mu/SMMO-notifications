@@ -25,10 +25,12 @@
   },
   "web_accessible_resources": [],
   "permissions": [
+    "notifications",
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
     "https://websimple-mmo.com/*",
     "http://*/",
-    "https://*/",
-    "notifications",
-    "storage"
+    "https://*/"
   ]
 }
