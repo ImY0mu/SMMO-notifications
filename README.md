@@ -7,4 +7,4 @@
 4. At top left select "Load Unpacked"
 5. Find the unzipped extension folder and load it.
 
-![Extension image](https://github.com/[username]/[reponame]/blob/[branch]/extension.png?raw=true)
+![Extension image](https://github.com/ImY0mu/ChromeExt_notificaitons-SMMO-web/blob/master/extension.png)
