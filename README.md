@@ -1,5 +1,5 @@
 # SMMO web app - chrome extension for notificaitons
-####Developed by Y0mu#0703
+#### Developed by Y0mu#0703
 ### Installation guide:
 1. Download and unzip the extension.
 2. Open your chrome browser and navigate to chrome://extensions/
