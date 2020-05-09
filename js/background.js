@@ -35,6 +35,11 @@ chrome.runtime.onInstalled.addListener(function() {
   });
 });
 
+chrome.runtime.onStartup.addListener(function() {
+  check();
+  if(debugging == 1){console.log('SMMOweb notifications has been started.')};
+})
+
 var notificationSettings = null;
 var number = 0;
 
