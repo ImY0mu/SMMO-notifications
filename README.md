@@ -1,6 +1,8 @@
 # SMMO web app - chrome extension for notifications
-## Version: 0.1 Alpha
+## Version: 0.1.1 Alpha
 #### Developed by Y0mu#0703
+### Latest changes:
+##### [0.1.1] - Fixed so the first notification's check fires up at browser start and not 10 minutes later.
 ### Features:
 - Works in background (you do not have to have the tab with game opened)
 - Options to disable/enable specific notifications at popup
