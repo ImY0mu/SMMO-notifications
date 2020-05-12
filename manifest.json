@@ -2,7 +2,7 @@
   "name": "SimpleMMO - notifications",
   "author": "Y0mu",
   "version": "0.1",
-  "version_name": "0.1 ALPHA",
+  "version_name": "0.1.1 ALPHA",
   "manifest_version" : 2,
   "description": "SMMO browser extension developed by Y0mu. It is a chrome extension that adds notifications to SMMO web app.",
   "icons": {
