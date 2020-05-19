@@ -301,7 +301,7 @@ function notify(id, data, type){
     type: "list",
     title: "SimpleMMO",
     message: "",
-    iconUrl: "img/lojo.webp",
+    iconUrl: "img/logo.webp",
     items: data,
     buttons: [{
       title: "Open SMMO"
