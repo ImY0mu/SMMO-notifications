@@ -11,40 +11,105 @@
         <div class="top">
             <span>Notifications</span>
         </div>
-        <ul class="tg-list">
-            <li class="tg-list-item">
-              <h4>Steps</h4>
-              <input class="tgl tgl-ios" id="steps" type="checkbox"/>
-              <label class="tgl-btn" for="steps"></label>
-            </li>
-            <li class="tg-list-item">
-                <h4>Energy</h4>
-                <input class="tgl tgl-ios" id="energy" type="checkbox"/>
-                <label class="tgl-btn" for="energy"></label>
-            </li>
-        </ul>
-        <ul class="tg-list">
-            <li class="tg-list-item">
-                <h4>Quests</h4>
-                <input class="tgl tgl-ios" id="quests" type="checkbox"/>
-                <label class="tgl-btn" for="quests"></label>
-            </li>
-            <li class="tg-list-item">
-                <h4>Messages</h4>
-                <input class="tgl tgl-ios" id="messages" type="checkbox"/>
-                <label class="tgl-btn" for="messages"></label>
-            </li>
-        </ul>
-        <ul class="tg-list">
-            <li class="tg-list-item">
-                <h4>Notifications</h4>
-                <input class="tgl tgl-ios" id="notifications" type="checkbox"/>
-                <label class="tgl-btn" for="notifications"></label>
-            </li>
-            <li class="tg-list-item">
-                <button id="check" class="button">Check</button>
-            </li>
-        </ul>
+        <div class="bar underline">
+            <a class="active" id="options" href="#">Options</a>
+            <a id="custom" href="#">Customization</a>
+            <a id="check" href="#" class="hide">Check</a>
+            <a id="backBtn" href="#" class="hide">Back</a>
+            <a id="connectBtn" href="#" class="">Re-Connect</a>
+        </div>
+        <div id="optionsPanel" class="body">
+            <h5 class="hide">Notifications</h5>
+            <ul class="tg-list item-hide">
+                <li class="tg-list-item">
+                  <span class="title" title="Notifications for steps" alt="Notifications for steps">Steps
+                    <svg version="1.1" id="stepsMessage" class="editIcon" fill="white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="0" height="0" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+                        <path d="M968.161,31.839c36.456,36.456,36.396,95.547,0,132.003l-43.991,43.991L792.138,75.83l43.991-43.991 C872.583-4.586,931.704-4.617,968.161,31.839z M308.238,559.79l-43.96,175.963l175.963-43.991l439.938-439.938L748.147,119.821 L308.238,559.79z M746.627,473.387v402.175H124.438V253.373h402.204l124.407-124.438H0V1000h871.064V348.918L746.627,473.387z"/>
+                    </svg>
+                  </span>
+                  <input class="tgl tgl-ios" id="steps" type="checkbox"/>
+                  <label class="tgl-btn" for="steps"></label>
+                </li>
+                <li class="tg-list-item">
+                    <span class="title" title="Notifications for energy" alt="Notifications for energy">Energy
+                        <svg version="1.1" id="energyMessage" class="editIcon" fill="white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="0" height="0" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+                            <path d="M968.161,31.839c36.456,36.456,36.396,95.547,0,132.003l-43.991,43.991L792.138,75.83l43.991-43.991 C872.583-4.586,931.704-4.617,968.161,31.839z M308.238,559.79l-43.96,175.963l175.963-43.991l439.938-439.938L748.147,119.821 L308.238,559.79z M746.627,473.387v402.175H124.438V253.373h402.204l124.407-124.438H0V1000h871.064V348.918L746.627,473.387z"/>
+                        </svg>
+                    </span>
+                    <input class="tgl tgl-ios" id="energy" type="checkbox"/>
+                    <label class="tgl-btn" for="energy"></label>
+                </li>
+            </ul>
+            <ul class="tg-list item-hide">
+                <li class="tg-list-item">
+                    <span class="title" title="Notifications for quest points" alt="Notifications for quest points">Quests
+                        <svg version="1.1" id="questMessage" class="editIcon" fill="white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="0" height="0" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+                            <path d="M968.161,31.839c36.456,36.456,36.396,95.547,0,132.003l-43.991,43.991L792.138,75.83l43.991-43.991 C872.583-4.586,931.704-4.617,968.161,31.839z M308.238,559.79l-43.96,175.963l175.963-43.991l439.938-439.938L748.147,119.821 L308.238,559.79z M746.627,473.387v402.175H124.438V253.373h402.204l124.407-124.438H0V1000h871.064V348.918L746.627,473.387z"/>
+                        </svg>
+                    </span>
+                    <input class="tgl tgl-ios" id="quests" type="checkbox"/>
+                    <label class="tgl-btn" for="quests"></label>
+                </li>
+                <li class="tg-list-item">
+                    <span class="title" title="Notifications for in-game messages" alt="Notifications for in-game messages">Messages
+                        <svg version="1.1" id="messageMessage" class="editIcon" fill="white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="0" height="0" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+                            <path d="M968.161,31.839c36.456,36.456,36.396,95.547,0,132.003l-43.991,43.991L792.138,75.83l43.991-43.991 C872.583-4.586,931.704-4.617,968.161,31.839z M308.238,559.79l-43.96,175.963l175.963-43.991l439.938-439.938L748.147,119.821 L308.238,559.79z M746.627,473.387v402.175H124.438V253.373h402.204l124.407-124.438H0V1000h871.064V348.918L746.627,473.387z"/>
+                        </svg>
+                    </span>
+                    <input class="tgl tgl-ios" id="messages" type="checkbox"/>
+                    <label class="tgl-btn" for="messages"></label>
+                </li>
+            </ul>
+            <ul class="tg-list">
+                <li class="tg-list-item item-hide">
+                    <span class="title" title="Notifications for in-game notifications (events)" alt="Notifications for in-game notifications (events)">Notifs
+                        <svg version="1.1" id="notificationMessage" class="editIcon" fill="white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="0" height="0" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+                            <path d="M968.161,31.839c36.456,36.456,36.396,95.547,0,132.003l-43.991,43.991L792.138,75.83l43.991-43.991 C872.583-4.586,931.704-4.617,968.161,31.839z M308.238,559.79l-43.96,175.963l175.963-43.991l439.938-439.938L748.147,119.821 L308.238,559.79z M746.627,473.387v402.175H124.438V253.373h402.204l124.407-124.438H0V1000h871.064V348.918L746.627,473.387z"/>
+                        </svg>
+                    </span>
+                    
+                    <input class="tgl tgl-ios" id="notifications" type="checkbox"/>
+                    <label class="tgl-btn" for="notifications"></label>
+                </li>
+                <li class="tg-list-item">
+                    <span class="title" title="AutoCheck always shows notification with actual information" alt="AutoCheck always shows notification with actual information">AutoCheck
+                        <svg version="1.1" id="autoMessage" class="editIcon" fill="white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="0" height="0" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+                            <path d="M968.161,31.839c36.456,36.456,36.396,95.547,0,132.003l-43.991,43.991L792.138,75.83l43.991-43.991 C872.583-4.586,931.704-4.617,968.161,31.839z M308.238,559.79l-43.96,175.963l175.963-43.991l439.938-439.938L748.147,119.821 L308.238,559.79z M746.627,473.387v402.175H124.438V253.373h402.204l124.407-124.438H0V1000h871.064V348.918L746.627,473.387z"/>
+                        </svg>
+                    </span>
+                    <input class="tgl tgl-ios" id="caps" type="checkbox"/>
+                    <label class="tgl-btn" for="caps"></label>
+                </li>
+                <li id="item-timer" class="tg-list-item hide">
+                    <span class="title" title="AutoCheck - how often to check" alt="AutoCheck - how often to check">Timer (minutes)</span>
+                    <input class="" id="timer" type="number"/>
+                </li>
+            </ul>
+        </div>
+        <div id="customPanel" class="body">
+            <h5>Variables for <span id="whatMessage">Example</span></h5>
+            <table>
+                <thead>
+                <tr>
+                    <th>Syntax</th><th>What it does</th>
+                </tr>
+                </thead>
+                <tbody  id="tableContent">
+                    <tr>
+                        <td>%example%</td><td>Example message</td>
+                    </tr>
+                </tbody>
+            </table>
+            <textarea spellcheck="false" id="editMessage" cols="30" rows="10"></textarea>
+            <div class="bar">
+                <a id="updateBtn" href="#">Update</a>
+                <a id="defaultBtn" href="#">Default</a>
+            </div>
+        </div>
+        <div id="loadingPanel" class="body active">
+            <h5 id="loadMessage"></h5>
+            <div class="loader"></div>
+        </div>
         <div class="bottom"></div>
     </div>
     <script src="js/jquery.min.js"></script>
