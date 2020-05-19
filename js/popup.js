@@ -295,10 +295,12 @@ function updateMessage(type, message){
 function userAuth(){
     chrome.storage.local.get(['userAuth'], function(result) {
         if(result.userAuth == true){
-            $("#optionsPanel").addClass("active");
-            $("#loadingPanel").removeClass("active");
-            $("#check").removeClass("hide");
-            $("#connectBtn").addClass("hide");
+            if(!$('#customPanel').hasClass("active")){
+                $("#optionsPanel").addClass("active");
+                $("#loadingPanel").removeClass("active");
+                $("#check").removeClass("hide");
+                $("#connectBtn").addClass("hide");
+            }
         }
         else{
             $("#loadMessage").html("Login <a id='gameLink' href='#'>Here</a>");
