@@ -31,15 +31,27 @@ li {
 }
 
 .tg-list-item {
-  margin: 0 1em;
+  margin: 15px 1.38rem 8px 1.78rem;
+  width: 50px;
 }
 
 h2 {
   color: #777;
 }
 
-h4 {
+.title {
   color: #cacaca;
+  cursor: help;
+  font-size: 14px;
+  position: relative;
+  top: -10px;
+}
+
+h5 {
+  color: #cacaca;
+  cursor: default;
+  text-align: center;
+  width: 100%;
 }
 
 .tgl {
@@ -288,7 +300,7 @@ h4 {
 }
 
 .bottom{
-    margin-top: 10px;
+    margin-top: 0px;
     height: 5px;
     width: 100%;
     background-color: rgb(26, 26, 26);
@@ -302,9 +314,6 @@ h4 {
     transition: all .4s ease;
     border: 1px solid #070f3e;
     color: white;
-    position: absolute;
-    bottom: 15px;
-    right: 20px;
     outline: 0;
 }
 
@@ -312,4 +321,215 @@ h4 {
     background: #2e4669;
     border: 1px solid #070f3e;
 
+}
+
+.bar{
+  height: 30px;
+  width: 100%;
+}
+
+.bar.underline{
+  border-bottom: 2px solid #1a1a1a;
+}
+
+.bar a{
+  text-align: center;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 8px 0;
+  width: 50%;
+  float: left;
+} 
+#options{
+  width: 25%;
+  display: none;
+}
+
+#custom{
+  display: none;
+  width: 40%;
+}
+
+#check{
+  width: 100%;
+  background-color: #5dff5d40;
+}
+
+#check:hover{
+  background-color: #3d943d40;
+}
+
+#backBtn{
+  width: 100%;
+  background-color: #ff5d5d40;
+}
+
+
+#backBtn:hover{
+  background-color: #943d3d40;
+}
+
+#connectBtn{
+  width: 100%;
+  background-color: #5d83ff40;
+}
+
+
+#connectBtn:hover{
+  background-color: #433d9440;
+}
+
+
+#gameLink{
+  color: lightblue;
+}
+
+
+
+#updateBtn{
+  background-color: #5dff5d40;
+}
+
+#updateBtn:hover{
+  background-color: #3d943d40;
+}
+
+
+#defaultBtn{
+  background-color: #fcff5d40;
+}
+
+#defaultBtn:hover{
+  background-color: #948e3d40;
+}
+
+.bar:first-child{
+  width: 40%;
+}
+
+.bar a:hover{
+  background-color: rgba(0, 0, 0, 0.219);
+}
+
+.bar a.active{
+  background-color: rgba(0, 0, 0, 0.219);
+}
+
+.body{
+  display: none;
+  padding: 10px;
+}
+
+.body.edit{
+  width: 250px;
+}
+
+.body.active{
+  display: block;
+}
+
+h5{
+  color: #cacaca;
+  cursor: default;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  font-size: 0.9rem;
+   padding: 8px 0 0 0;
+   display: inline-block;
+}
+
+
+input[type="submit"]{
+  margin: 0;
+  padding: 4px;
+  outline: 0;
+  border: 1px solid rgb(255, 113, 0);
+  color: rgb(255, 153, 0);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus{
+  color: rgb(26, 26, 26);
+  background-color: rgb(255, 113, 0);
+}
+
+
+.item-hide.active{
+  display: none;
+}
+
+
+.hide{
+  display: none !important;
+}
+
+
+.editIcon {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: -25px;
+  fill: white;
+  top: 0;
+}
+
+
+.editIcon:hover{
+  cursor: pointer;
+  fill: #00ff0079;
+}
+
+
+#editMessage{
+  width: calc(100% - 10px);
+  resize: none;
+  height: 70px;
+  padding: 4px;
+  background-color: rgba(43, 43, 43, 0.5);
+  color: white;
+  border-color: rgba(36, 91, 243, 0.514);
+}
+
+#timer{
+  background-color: rgba(43, 43, 43, 0.5);
+  color: white;
+  border-color: rgba(36, 91, 243, 0.514);
+  padding: 4px;
+  width: 50px;
+}
+
+
+#customPanel table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#customPanel table th, #customPanel table td{
+  border: 1px solid white;
+  color: white;
+  padding: 4px;
+  text-align: center;
+}
+
+
+
+#loadingPanel .loader {
+  margin-top: 15px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
